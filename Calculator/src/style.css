@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.may-tinh {
+  background-color: #202020;
+  padding: 2px;
+  padding-top: 25px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  width: 320px;
+}
+
+#manHinh {
+  background-color: transparent;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
+  text-align: right;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  overflow-x: auto;
+  white-space: nowrap;
+  border: none;
+}
+
+.ban-phim {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+  padding: 2px;
+}
+
+.nut {
+  padding: 20px 0;
+  font-size: 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.1s;
+}
+
+.nut:hover {
+  filter: brightness(1.1);
+}
+
+.nut.phep-tinh {
+  background-color: #323232;
+}
+
+.nut.clear {
+  background-color: #323232;
+}
+
+.ban-phim .nut:nth-child(15) {
+  background-color: #7dd3c9;
+  color: black;
+  font-size: 24px;
+}
+
+.ban-phim .nut:nth-child(15):hover {
+  background-color: #92e2d9;
+}
