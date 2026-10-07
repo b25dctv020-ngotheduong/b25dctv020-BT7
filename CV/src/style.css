@@ -37,9 +37,8 @@ body {
     align-items: center;
     border: 6px solid #34495e;
     background-color: #ecf0f1;
-    color: #2c3e50;
-    font-size: 100px;
-    font-weight: bold;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .contact-info {
